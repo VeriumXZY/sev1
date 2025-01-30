@@ -1,0 +1,42 @@
+-- List of whitelisted User IDs (replace with actual user IDs)
+local whitelistedUserIDs = {
+    123456789, -- Example User ID 1
+    987654321, -- Example User ID 2
+}
+
+-- You can also whitelist by Username if you'd prefer
+local whitelistedUsernames = {
+    "Player1Username",  -- Example Username 1
+    "Player2Username",  -- Example Username 2
+}
+
+-- Function to check if the player is whitelisted
+local function isWhitelisted(player)
+    -- Check if the player is in the whitelisted User ID list
+    for _, id in ipairs(whitelistedUserIDs) do
+        if player.UserId == id then
+            return true
+        end
+    end
+
+    -- Alternatively, check if the player is in the whitelisted Username list
+    for _, username in ipairs(whitelistedUsernames) do
+        if player.Name == username then
+            return true
+        end
+    end
+
+    return false
+end
+
+-- The player executing the script
+local player = game.Players.LocalPlayer
+
+-- Check if the player is whitelisted
+if isWhitelisted(player) then
+    print("You are whitelisted! You can proceed with the script.")
+else
+    -- If not whitelisted, kick the player and print a message
+    print("You are not whitelisted. Kicking you from the game.")
+    player:Kick("You are not whitelisted to execute this script.")
+end
