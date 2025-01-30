@@ -6,7 +6,7 @@ local whitelistedUserIDs = {
 
 -- You can also whitelist by Username if you'd prefer
 local whitelistedUsernames = {
-    "Player1Username",  -- Example Username 1
+    "MiniMogger122",  -- Example Username 1
     "Player2Username",  -- Example Username 2
 }
 
