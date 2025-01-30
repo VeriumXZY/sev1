@@ -1,13 +1,13 @@
 -- List of whitelisted User IDs (replace with actual user IDs)
 local whitelistedUserIDs = {
     7936744830, -- Example User ID 1
-    987654321, -- Example User ID 2
+    7883847752, -- Example User ID 2
 }
 
 -- You can also whitelist by Username if you'd prefer
 local whitelistedUsernames = {
     "MiniMogger122",  -- Example Username 1
-    "Player2Username",  -- Example Username 2
+    "efrsdfsdf5",  -- Example Username 2
 }
 
 -- Function to check if the player is whitelisted
