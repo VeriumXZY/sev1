@@ -1,6 +1,6 @@
 -- List of whitelisted User IDs (replace with actual user IDs)
 local whitelistedUserIDs = {
-    123456789, -- Example User ID 1
+    7936744830, -- Example User ID 1
     987654321, -- Example User ID 2
 }
 
